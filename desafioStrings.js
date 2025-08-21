@@ -1,16 +1,31 @@
-/*
-O Desafio:
-Crie um programa que faça o seguinte:
-Pergunte ao usuário o nome completo.
-Mostre o nome completo em maiúsculas e minúsculas.
-Mostre quantos caracteres o nome completo tem (descontando os espaços em branco).
-Mostre o primeiro nome e o último nome separadamente.
-*/
+const readline = require('readline-sync');
 
-let nomeCompleto = prompt("Digite seu nome completo:");
-console.log("Nome completo em maiúsculas:", nomeCompleto.toUpperCase());
-console.log("Nome completo em minúsculas:", nomeCompleto.toLowerCase());
-console.log("Quantidade de caracteres (sem espaços):", nomeCompleto.replace(/\s/g, "").length);
-let nomes = nomeCompleto.split(" ");
-console.log("Primeiro nome:", nomes[0]);
-console.log("Último nome:", nomes[nomes.length - 1]);
+let nomeCompleto = readline.question('Digite seu nome completo:')
+console.log("Nome Maiúsculo: ", nomeMaiusculo(nomeCompleto));
+console.log("Nome Minúsculo: ", nomeMinusculo(nomeCompleto));
+console.log("Quantidade de Caracteres: ", quantidadeDeCaracteres(nomeCompleto));
+console.log("Primeiro nome: ", nomesSeparados(nomeCompleto).primeiroNome);
+console.log("Último nome: ", nomesSeparados(nomeCompleto).ultimoNome);
+
+function nomeMaiusculo(nomeCompleto){
+    const maiusculo = nomeCompleto.toUpperCase();
+    return maiusculo;
+}
+function nomeMinusculo(nomeCompleto){
+    const minusculo = nomeCompleto.toLowerCase();
+    return minusculo;
+}
+function quantidadeDeCaracteres(nomeCompleto){
+    const nomeSemEspacos = nomeCompleto.replace(/ /g, '');
+    const quantidadeDeCaracteres = nomeSemEspacos.length;
+    return quantidadeDeCaracteres;
+}
+function nomesSeparados(nomeCompleto){
+    const nomes = nomeCompleto.split(/ /g);
+    const primeiroNome = nomes[0];
+    const ultimoNome = nomes[nomes.length - 1];
+    return{
+        primeiroNome,
+        ultimoNome
+    };
+}
