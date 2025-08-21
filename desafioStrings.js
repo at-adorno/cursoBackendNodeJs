@@ -29,3 +29,10 @@ function nomesSeparados(nomeCompleto){
         ultimoNome
     };
 }
+
+module.exports = {
+  nomeMaiusculo,
+  nomeMinusculo,
+  quantidadeDeCaracteres,
+  nomesSeparados
+};
