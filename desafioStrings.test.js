@@ -27,13 +27,13 @@ describe('Funções de manipulação de strings', () => {
   describe('quantidadeDeCaracteres', () => {
     test('deve retornar o número de caracteres sem espaços', () => {
       expect(quantidadeDeCaracteres('João Silva')).toBe(9);
-      expect(quantidadeDeCaracteres('Maria de Souza')).toBe(13);
+      expect(quantidadeDeCaracteres('Maria de Souza')).toBe(12);
     });
     test('deve retornar 0 para string vazia', () => {
       expect(quantidadeDeCaracteres('')).toBe(0);
     });
     test('deve ignorar múltiplos espaços', () => {
-      expect(quantidadeDeCaracteres('Ana   Paula')).toBe(9);
+      expect(quantidadeDeCaracteres('Ana   Paula')).toBe(8);
     });
   });
 

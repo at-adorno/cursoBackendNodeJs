@@ -16,12 +16,12 @@ function nomeMinusculo(nomeCompleto){
     return minusculo;
 }
 function quantidadeDeCaracteres(nomeCompleto){
-    const nomeSemEspacos = nomeCompleto.replace(/ /g, '');
+    const nomeSemEspacos = nomeCompleto.replace(/\s+/g, '');
     const quantidadeDeCaracteres = nomeSemEspacos.length;
     return quantidadeDeCaracteres;
 }
 function nomesSeparados(nomeCompleto){
-    const nomes = nomeCompleto.split(/ /g);
+    const nomes = nomeCompleto.split(/\s+/g);
     const primeiroNome = nomes[0];
     const ultimoNome = nomes[nomes.length - 1];
     return{
