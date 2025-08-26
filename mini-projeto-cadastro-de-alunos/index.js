@@ -43,7 +43,7 @@ function cadastrarAluno() {
 function listarAlunos() {
     console.log("=== Lista de Alunos ===");
     cadastroDeAlunos.forEach((aluno, index) => {
-        console.log(`${index + 1}. ${aluno.nome} - Média: ${aluno.media.toFixed(2)}`);
+        console.log(`${index + 1}. ${aluno.nome} - Primeira nota: ${aluno.notas[0]} - Segunda nota: ${aluno.notas[1]} - Média: ${aluno.media.toFixed(2)}`);
     });
 }
 

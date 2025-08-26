@@ -13,7 +13,7 @@
    ```
    npm install prompt-sync
    ```
-
+cd /home/aluno/Área\ de\ trabalho/dev/cursoBackendNodeJs/mini-projeto-cadastro-de-alunos
 3. **Execute o programa:**
    ```
    node index.js
