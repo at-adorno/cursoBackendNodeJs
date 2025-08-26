@@ -7,7 +7,8 @@ function exibirMenu() {
     console.log("=== Cadastro de Alunos ===");
     console.log("1. Cadastrar Aluno");
     console.log("2. Listar Alunos");
-    console.log("3. Sair");
+    console.log("3. Resultado Final");
+    console.log("4. Sair");
     const opcao = prompt("Escolha uma opção: ");
     return opcao;
 }
@@ -47,17 +48,32 @@ function listarAlunos() {
     });
 }
 
+//função para listar o resultado final
+function resultadoFinal() {
+    console.log("=== Resultado Final ===");
+    cadastroDeAlunos.forEach((aluno) => {
+        const status = aluno.media >= 7 ? "Aprovado" : "Reprovado";
+        console.log(`${aluno.nome} - Média: ${aluno.media.toFixed(2)} - Status: ${status}`);
+    });
+}
+
 //loop principal do programa
 while (true) {
     const opcao = exibirMenu();
-    if (opcao === "1") {
-        cadastrarAluno();
-    } else if (opcao === "2") {
-        listarAlunos();
-    } else if (opcao === "3") {
-        console.log("Saindo...");
-        break;
-    } else {
-        console.log("Opção inválida. Tente novamente.");
+    switch (opcao) {
+        case '1':
+            cadastrarAluno();
+            break;
+        case '2':
+            listarAlunos();
+            break;
+        case '3':
+            resultadoFinal();
+            break;
+        case '4':
+            console.log("Saindo do programa...");
+            process.exit(0);
+        default:
+            console.log("Opção inválida. Tente novamente.");
     }
-}
+};

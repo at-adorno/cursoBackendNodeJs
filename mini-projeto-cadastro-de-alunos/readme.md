@@ -31,9 +31,10 @@ cd /home/aluno/Área\ de\ trabalho/dev/cursoBackendNodeJs/mini-projeto-cadastro-
 === Cadastro de Alunos ===
 1. Cadastrar Aluno
 2. Listar Alunos
-3. Sair
+3. Resultado Final
+4. Sair
 Escolha uma opção: 1
 Digite o nome do aluno: João
 Digite a primeira nota: 8
 Digite a segunda nota: 7
-Aluno cadastrado
+Aluno cadastrado com sucesso!
