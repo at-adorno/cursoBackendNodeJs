@@ -1,0 +1,39 @@
+# Mini Projeto — Cadastro de Alunos
+
+**Integrantes:** André Tavares Adorno, Alessandra Santos
+
+## Como executar o projeto
+
+1. **Abra o terminal na pasta do projeto:**
+   ```
+   cd "/home/aluno/Área de trabalho/dev/cursoBackendNodeJs/mini-projeto-cadastro-de-alunos"
+   ```
+
+2. **Instale as dependências:**
+   ```
+   npm install prompt-sync
+   ```
+
+3. **Execute o programa:**
+   ```
+   node index.js
+   ```
+
+## Funcionamento
+
+- O programa exibe um menu interativo no terminal.
+- Você pode cadastrar alunos, listar alunos cadastrados e sair do programa.
+- As notas e médias dos alunos são exibidas na listagem.
+
+## Exemplo de execução
+
+```
+=== Cadastro de Alunos ===
+1. Cadastrar Aluno
+2. Listar Alunos
+3. Sair
+Escolha uma opção: 1
+Digite o nome do aluno: João
+Digite a primeira nota: 8
+Digite a segunda nota: 7
+Aluno cadastrado
