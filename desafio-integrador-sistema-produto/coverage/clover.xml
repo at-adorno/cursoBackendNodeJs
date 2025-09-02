@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1756855291103" clover="3.2.0">
-  <project timestamp="1756855291104" name="All files">
+<coverage generated="1756856310566" clover="3.2.0">
+  <project timestamp="1756856310566" name="All files">
     <metrics statements="41" coveredstatements="41" conditionals="20" coveredconditionals="20" methods="12" coveredmethods="12" elements="73" coveredelements="73" complexity="0" loc="41" ncloc="41" packages="2" files="2" classes="2"/>
     <package name="functions">
       <metrics statements="30" coveredstatements="30" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9"/>
@@ -40,7 +40,7 @@
     </package>
     <package name="utils">
       <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
-      <file name="decision.js" path="/home/aluno/Área de trabalho/dev/cursoBackendNodeJs/desafio-integrador-sistema-produto/src/utils/decision.js">
+      <file name="decisoes.js" path="/home/aluno/Área de trabalho/dev/cursoBackendNodeJs/desafio-integrador-sistema-produto/src/utils/decisoes.js">
         <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
         <line num="2" count="14" type="cond" truecount="2" falsecount="0"/>
         <line num="6" count="9" type="stmt"/>

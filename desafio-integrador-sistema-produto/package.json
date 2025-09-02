@@ -1,7 +1,7 @@
 {
-  "name": "product-registration-system",
+  "name": "desafio-integrador-sistema-produto",
   "version": "1.0.0",
-  "description": "A console application for registering and managing products.",
+  "description": "Desafio integrador - sistema de produto",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -10,6 +10,6 @@
   "dependencies": {
     "prompt-sync": "^4.2.0"
   },
-  "author": "",
+  "author": "André Tavares Adorno",
   "license": "ISC"
 }

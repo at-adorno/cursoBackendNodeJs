@@ -1,4 +1,4 @@
-const { validateProductData, handleError } = require('../utils/decision');
+const { validarDadosProduto, tratarErro } = require('../utils/decisoes');
 
 function cadastrarProduto(produtos) {
     const prompt = require('prompt-sync')();
@@ -6,16 +6,16 @@ function cadastrarProduto(produtos) {
     const preco = Number(prompt('Preço do produto: ').replace(',', '.'));
     const quantidade = Number(prompt('Quantidade: '));
 
-    const erro = validateProductData({ nome, preco, quantidade });
+    const erro = validarDadosProduto({ nome, preco, quantidade });
     if (erro) {
-        handleError(erro);
+        tratarErro(erro);
         return;
     }
 
     // Verifica duplicidade
     const existe = produtos.some(p => p.nome.toLowerCase() === nome.toLowerCase());
     if (existe) {
-        handleError('Já existe produto com esse nome.');
+        tratarErro('Já existe produto com esse nome.');
         return;
     }
 
