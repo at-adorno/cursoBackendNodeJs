@@ -99,3 +99,6 @@ E assim manter o catálogo da biblioteca atualizado e organizado.
 ---
 ### RNF05 – Armazenamento seguro dos dados
 #### Os dados devem ser armazenados de forma segura e persistente (ex: banco de dados relacional ou NoSQL com criptografia).
+---
+### RNF06 – Conexões Simultâneas
+#### O sistema deve suportar até 400 conexões de usuários simultâneas sem comprometer a performance.
