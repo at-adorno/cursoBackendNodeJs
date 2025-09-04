@@ -1,3 +1,9 @@
+#Alunos:
+#### Alessandra
+#### André
+#### Diciane
+#### Wanessa
+
 # Requisitos Funcionais
 #### Estes requisitos descrevem o que o sistema deve fazer, ou seja, as funcionalidades oferecidas aos usuários (bibliotecários, alunos, etc.).
 ---
