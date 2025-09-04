@@ -1,8 +1,4 @@
-# Alunos:
-#### Alessandra
-#### André
-#### Diciane
-#### Wanessa
+#### Alunos: Alessandra, André, Diciane e Wanessa.
 
 # Requisitos Funcionais (RF)
 #### Estes requisitos descrevem o que o sistema deve fazer, ou seja, as funcionalidades oferecidas aos usuários (bibliotecários, alunos, etc.).
