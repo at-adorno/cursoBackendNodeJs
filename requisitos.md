@@ -17,10 +17,11 @@
 - **Número de exemplares disponíveis**
 - **Código de identificação** (ISBN ou outro)
 ---
-### Reescrevendo o RF01 como uma Hitória de Usuário
-Como bibliotecário,
-Quero cadastrar novos livros no acervo do sistema,
-Para que eu possa registrar as informações importantes de cada obra, como:
+### Reescrevendo o RF01 como uma História de Usuário
+#### HU01 - Caddastrar livros novos
+*Como* bibliotecário,
+*Quero* cadastrar novos livros no acervo do sistema,
+*Para que eu possa* registrar as informações importantes de cada obra, como:
 - Título
 - Autor
 - Editora
@@ -29,6 +30,27 @@ Para que eu possa registrar as informações importantes de cada obra, como:
 - Número de exemplares disponíveis
 - Código de identificação (ISBN ou outro)
 E assim manter o catálogo da biblioteca atualizado e organizado.
+#### Critérios de Aceitação da HU01:
+- Cadastro bem-sucedido com todos os campos preenchidos:
+*Dado que* o bibliotecário está na tela de cadastro de livros,
+*Quando* ele preenche todos os campos obrigatórios com informações válidas e confirma o cadastro,
+*Então* o sistema deve salvar o livro no acervo e exibir uma mensagem de sucesso.
+- Campos obrigatórios não preenchidos:
+*Dado que* o bibliotecário está na tela de cadastro de livros,
+*Quando* ele tenta salvar sem preencher um ou mais campos obrigatórios (ex: título, autor, ISBN),
+*Então* o sistema deve exibir uma mensagem de erro indicando quais campos estão faltando.
+- Validação de formato do ISBN (ou outro código):
+*Dado que* o bibliotecário está preenchendo o campo de código de identificação,
+*Quando* ele insere um código em formato inválido,
+*Então* o sistema deve impedir o cadastro e informar que o código deve estar em um formato válido (ex: ISBN-13).
+- Verificação de duplicidade de livros (opcional, se aplicável):
+*Dado que* o bibliotecário está tentando cadastrar um novo livro,
+*Quando* o sistema identifica que um livro com o mesmo ISBN já está cadastrado,
+*Então* o sistema deve alertar o bibliotecário e sugerir atualização de exemplares ao invés de novo cadastro (se essa for a regra do sistema).
+- Cadastro de múltiplos exemplares:
+*Dado que* o bibliotecário informa o número de exemplares disponíveis,
+*Quando* ele conclui o cadastro,
+*Então* o sistema deve registrar corretamente a quantidade de exemplares no acervo.
 ---
 ### RF02 – Listar todos os livros disponíveis
 #### O sistema deve exibir uma lista com todos os livros cadastrados que possuem ao menos um exemplar disponível para empréstimo.
