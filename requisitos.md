@@ -17,6 +17,19 @@
 - **Número de exemplares disponíveis**
 - **Código de identificação** (ISBN ou outro)
 ---
+### Reescrevendo o RF01 como uma Hitória de Usuário
+Como bibliotecário,
+Quero cadastrar novos livros no acervo do sistema,
+Para que eu possa registrar as informações importantes de cada obra, como:
+- Título
+- Autor
+- Editora
+- Ano de publicação
+- Gênero
+- Número de exemplares disponíveis
+- Código de identificação (ISBN ou outro)
+E assim manter o catálogo da biblioteca atualizado e organizado.
+---
 ### RF02 – Listar todos os livros disponíveis
 #### O sistema deve exibir uma lista com todos os livros cadastrados que possuem ao menos um exemplar disponível para empréstimo.
 ---
