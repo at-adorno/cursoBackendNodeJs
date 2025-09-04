@@ -4,7 +4,7 @@
 #### Diciane
 #### Wanessa
 
-# Requisitos Funcionais
+# Requisitos Funcionais (RF)
 #### Estes requisitos descrevem o que o sistema deve fazer, ou seja, as funcionalidades oferecidas aos usuários (bibliotecários, alunos, etc.).
 ---
 ### RF01 – Cadastrar livros novos
@@ -41,10 +41,13 @@
 - Indicar se houve atraso e, se sim, calcular dias de atraso
 ---
 ### RF06 – Gerenciar usuários *(opcional avançado)*
-
 #### O sistema pode incluir gerenciamento de usuários com cadastro, autenticação e permissões (ex: aluno, professor, bibliotecário).
 ---
-# Requisitos Não Funcionais
+### RF07 – Sugerir Títulos *(opcional avançado)*
+#### Baseado no histórico de pesquisa o sistema deve sugerir em uma parte específica sugestões de títulos relacionados aos pesquisados baseados em gênero/autor.
+
+---
+# Requisitos Não Funcionais (RNF)
 #### Estes requisitos descrevem como o sistema deve se comportar em termos de qualidade, desempenho e restrições técnicas.
 ---
 ### RNF01 – Interface intuitiva e amigável
