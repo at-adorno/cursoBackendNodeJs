@@ -1,0 +1,13 @@
+Casos de Uso
+Casos de uso que representam as ações que o sistema deve realizar, seguindo os requisitos fornecidos.
+
+1. Módulo de Gerenciamento de Acervo
+
+Cadastrar Livro: Permite ao bibliotecário adicionar um novo livro ao acervo.
+Listar Livros: Permite ao bibliotecário e ao usuário visualizar a lista completa de livros.
+Buscar Livro: Permite ao bibliotecário e ao usuário pesquisar livros por título ou autor.
+
+2. Módulo de Controle de Empréstimos
+Registrar Empréstimo: Permite ao bibliotecário registrar a saída de um livro para um usuário.
+Registrar Devolução: Permite ao bibliotecário registrar a volta de um livro ao acervo.
+Descrição do Diagrama
