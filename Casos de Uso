@@ -8,6 +8,7 @@ Listar Livros: Permite ao bibliotecário e ao usuário visualizar a lista comple
 Buscar Livro: Permite ao bibliotecário e ao usuário pesquisar livros por título ou autor.
 
 2. Módulo de Controle de Empréstimos
+
 Registrar Empréstimo: Permite ao bibliotecário registrar a saída de um livro para um usuário.
 Registrar Devolução: Permite ao bibliotecário registrar a volta de um livro ao acervo.
 Descrição do Diagrama
